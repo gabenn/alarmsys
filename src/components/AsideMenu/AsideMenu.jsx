@@ -1,9 +1,12 @@
+//Libraries
 import bemCssModules from 'bem-css-modules';
 import React, { useContext, useEffect, useState } from 'react';
-import { StoreContext } from '../../store/StoreProvider';
-import {default as AsideMenuStyles} from './AsideMenu.module.scss';
+//Components
 import AdminMenu from './subcomponents/AdminMenu';
+import { StoreContext } from '../../store/StoreProvider';
 import UserMenu from './subcomponents/UserMenu';
+//Styles
+import {default as AsideMenuStyles} from './AsideMenu.module.scss';
 const style = bemCssModules(AsideMenuStyles);
 
 const ADMIN_TYPE = 1;

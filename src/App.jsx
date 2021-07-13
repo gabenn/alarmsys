@@ -1,9 +1,12 @@
-import Header from './components/Header/Header';
+//Libraries
 import React from 'react';
-import StoreProvider from './store/StoreProvider';
 import {HashRouter as Router} from 'react-router-dom';
-import './App.scss';
+//Components
+import Header from './components/Header/Header';
+import StoreProvider from './store/StoreProvider';
 import AsideMenu from './components/AsideMenu/AsideMenu';
+//Styles
+import './App.scss';
 
 const App = () => {
   return ( 

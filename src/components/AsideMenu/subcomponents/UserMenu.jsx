@@ -1,10 +1,10 @@
-import React from 'react';
+//Libraries
 import bemCssModules from 'bem-css-modules';
+import React from 'react';
 import {Link} from 'react-router-dom';
+//Styles
 import {default as AsideMenuStyles} from '../AsideMenu.module.scss';
 const style = bemCssModules(AsideMenuStyles);
-
-
 
 const UserMenu = ({isUserLogged}) => {
   return ( 

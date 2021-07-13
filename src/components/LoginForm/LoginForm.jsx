@@ -1,10 +1,12 @@
+//Libraries
 import bemCssModules from 'bem-css-modules';
 import React, { useContext, useEffect, useState } from 'react';
 import request from '../../helpers/request';
+//Context
 import { StoreContext } from '../../store/StoreProvider';
-
+//Components
 import Modal from '../Modals/Modal';
-
+//Styles
 import {default as LoginFormStyles} from './LoginForm.module.scss';
 const style = bemCssModules(LoginFormStyles);
 
@@ -25,18 +27,13 @@ const LoginForm = ({handleOnClose,isModalOpen}) => {
 
   const handleOnSubmit = async e =>{
     e.preventDefault();
-    const {data, status} = await request.post('/users',
-    { login, password }
-    );
+    const {data, status} = await request.post('/users',{ login, password });
 
     if(status===200) {
       setUser(data.user);
       resetStateOfInputs();
       handleOnClose();
-    } else{
-      setValidateMessage(data.message);
-    }
-
+    } else setValidateMessage(data.message);
   }
 
   useEffect(()=>{if(isModalOpen) resetStateOfInputs()},[isModalOpen])
@@ -64,23 +61,13 @@ const LoginForm = ({handleOnClose,isModalOpen}) => {
       >
         {validateMessageComponent}
         <div className={style('row')}>
-          <label htmlFor="">
-            Login
-            <input 
-              type="text" 
-              value={login}
-              onChange={handleOnChangeLogin}
-            />
+          <label htmlFor=""> Login
+            <input type="text" value={login}onChange={handleOnChangeLogin}/>
           </label>
         </div>
         <div className={style('row')}>
-          <label htmlFor="">
-            Hasło
-            <input 
-              type="password" 
-              value={password} 
-              onChange={handleOnChangePassword}
-            />
+          <label htmlFor=""> Hasło
+            <input type="password" value={password} onChange={handleOnChangePassword}/>
           </label>
         </div>
         <div className={style('row')}>
@@ -91,6 +78,5 @@ const LoginForm = ({handleOnClose,isModalOpen}) => {
     </Modal>
    );
 }
- 
 
 export default LoginForm;
