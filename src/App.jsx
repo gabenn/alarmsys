@@ -1,12 +1,16 @@
+import Header from './components/Header/Header';
 import React from 'react';
+import StoreProvider from './store/StoreProvider';
 
 import './App.scss';
 
 const App = () => {
   return ( 
-  <header>
-    Hello
-  </header> 
+    <>
+    <StoreProvider>
+      <Header />
+    </StoreProvider> 
+    </>
   );
 }
  
