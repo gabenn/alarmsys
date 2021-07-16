@@ -13,12 +13,14 @@ const Course = ({authors,img,price,title}) => {
   const allAuthors = authors.join(', ');
 
   return ( 
+    <li>
     <article className={style()}>
       <h3 className={'title'}></h3>
       <img src={img} className={style('image')} alt={title} />
       <p className={style('price')}>{price}</p>
       <p className={style('authors')}>{authors.length > 1 ? `Autorzy Kursu: ${allAuthors}` : `Autor Kursu: ${allAuthors}`}</p>
     </article>
+    </li>
    );
 }
  
