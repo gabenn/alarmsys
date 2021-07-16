@@ -5,6 +5,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 
 //Components
 import Courses from '../Courses/Courses';
+import UserCourses from '../UserCourses/UserCourses';
 
 //Styles
 import {default as ContentStyles} from './Content.module.scss';
@@ -23,7 +24,7 @@ const Content = () => {
   <main className={style()}>
     <Switch>
       <Route exact path='/' render={()=> <Courses /> }/>
-      { isUserLogged && <Route exact path='/my-courses' render={()=><p>Moje kursy</p>} />      }
+      { isUserLogged && <Route exact path='/my-courses' render={()=><UserCourses/>} />      }
       { isAdmin && <Route exact path='/manage-courses' render={()=><p>zarzadzaj</p>} />      }
       <Redirect to='/'/>
     </Switch>
