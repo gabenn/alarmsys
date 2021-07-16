@@ -8,7 +8,7 @@ const StoreProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const fetchData = async () => {
-    const { data } = await request.get('./course');
+    const { data } = await request.get('./courses');
     setCourses(data.courses);
   }
 
