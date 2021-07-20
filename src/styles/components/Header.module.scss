@@ -1,0 +1,17 @@
+@use 'Variables';
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 15px 50px;
+  
+  &__navigation-bar{
+    background-color: Variables.$basic-bg-color;
+  }
+
+  &__img{
+
+  }
+
+}
