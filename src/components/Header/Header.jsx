@@ -33,10 +33,10 @@ const Header = () => {
       ?(
       <nav className={`${style('mobile-navigation-bar')} `}>
         <h1>MENU</h1>
-        <Link to='/'>STRONA GŁÓWNA</Link>
-        <Link to='/about'>O FIRMIE</Link>
-        <Link to='/offer'>OFERTA</Link>
-        <Link to='/contact'>KONTAKT</Link>
+        <Link to='/' onClick={handleCloseMenu}>STRONA GŁÓWNA</Link>
+        <Link to='/about' onClick={handleCloseMenu}>O FIRMIE</Link>
+        <Link to='/offer' onClick={handleCloseMenu}>OFERTA</Link>
+        <Link to='/contact' onClick={handleCloseMenu}>KONTAKT</Link>
         <button onClick={handleCloseMenu}>ZAMKNIJ</button>
       </nav>
       )
