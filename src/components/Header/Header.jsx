@@ -1,7 +1,7 @@
 //Libraries
 import bemCssModules from 'bem-css-modules';
 import React, { useContext, useEffect, useState } from 'react';
-import { Link, Redirect, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 //Context
 //Components
 //Styles
@@ -9,21 +9,18 @@ import { default as HeaderStyles} from '../../styles/components/Header.module.sc
 const style = bemCssModules(HeaderStyles);
 
 const Header = () => {
+  //TO DO HAMBURGER
   return ( 
     <header className={style()}>
       <div>
-        img
+        LOGO
         {/* IMG */}
       </div>
-      <nav>
-        {/* 
-          NAWIGACJA 
-            Home
-            About
-            Offer
-            Contact
-        */}
-        nav
+      <nav className={style('navigation-bar')}>
+        <Link to='/'>STRONA GŁÓWNA</Link>
+        <Link to='/about'>O FIRMIE</Link>
+        <Link to='/offer'>OFERTA</Link>
+        <Link to='/contact'>KONTAKT</Link>
       </nav>
     </header>
    );

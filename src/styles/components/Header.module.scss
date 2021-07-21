@@ -1,4 +1,9 @@
-@use 'Variables';
+$basic-font-family: 'Barlow Semi Condensed', sans-serif;
+$basic-bg-color: rgb(17, 16, 16);
+$basic-font-color: rgb(245, 222, 179);
+$basic-font-weight: 400;
+$big-font-weight: 600;
+
 .header{
   display: flex;
   flex-direction: row;
@@ -7,7 +12,43 @@
   padding: 15px 50px;
   
   &__navigation-bar{
-    background-color: Variables.$basic-bg-color;
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+
+    background-color: $basic-bg-color;
+
+    &>a{
+      min-width: 120px;
+      max-width: 120px;
+      padding: 10px 5px;
+
+      font-size: 1.25em;
+      font-weight: $basic-font-weight;
+      text-decoration: none;
+
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      border-bottom:5px solid $basic-font-color;
+
+      transition: .5s;
+    }
+
+    &>a:hover{
+      background-color: $basic-font-color;
+      border-bottom:5px solid $basic-bg-color;
+      transform: translateY(5px);
+
+      color: $basic-bg-color;
+      font-weight: $big-font-weight;
+    }
   }
 
   &__img{

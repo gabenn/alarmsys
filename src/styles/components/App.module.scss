@@ -1,13 +1,19 @@
-@use 'Variables';
+$basic-font-family: 'Barlow Semi Condensed', sans-serif;
+$basic-bg-color: rgb(17, 16, 16);
+$basic-font-color: rgb(245, 222, 179);
+$basic-font-weight: 400;
+$big-font-weight: 600;
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Variables.$basic-font-family;
-  font-weight: Variables.$basic-font-weight;
+  
+  color: $basic-font-color;
+  font-family: $basic-font-family;
+  font-weight: $basic-font-weight;
 }
 
 body{
-  background-color: Variables.$basic-bg-color;
+  background-color: $basic-bg-color;
 }
