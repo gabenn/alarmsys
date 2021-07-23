@@ -1,0 +1,37 @@
+$basic-font-family: 'Barlow Semi Condensed', sans-serif;
+$basic-bg-color: rgb(17, 16, 16);
+$basic-font-color: rgb(245, 222, 179);
+$basic-font-weight: 400;
+$big-font-weight: 600;
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-around;
+
+  background-color: $basic-font-color;
+
+  padding: 20px;
+
+  *{
+    color: $basic-bg-color;
+    text-decoration: none;
+  }
+  &__address{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__navigation-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &>a:before{
+      font-size: 1.2em;
+      content: "\2192\ ";
+    }
+
+  }
+}
