@@ -108,6 +108,17 @@ $big-font-weight: 600;
 
     background-color: $basic-bg-color;
     border: none;
-    border-bottom:5px solid $basic-font-color;
+
+    &:before { 
+      font-size: 2em;
+      content:'\2630';
+     }
+  }
+  
+  &__img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

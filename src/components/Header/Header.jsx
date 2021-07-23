@@ -6,22 +6,17 @@ import { useSpring, animated as a } from "react-spring";
 //Context
 //Components
 //Styles
-import { default as HeaderStyles} from '../../styles/components/Header.module.scss';
+import { default as HeaderStyles} from '../../styles/Header.module.scss';
 const style = bemCssModules(HeaderStyles);
 
 const Header = () => {
 
   //TODO
   //WYCIĄGNĄĆ NAWIGACJE DO NOWEGO KOMPONENTU (PROBLEM ZE STYLAMI)
-  //ANIMACJA MENU MOBILE (MOŻE SAM CSS?)
   const isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
-
-  const handleCloseMenu = ()=>setShowMenu(false)
-  const handleOpenMenu = ()=>setShowMenu(true)
 
   const [showMenu, displayMenu] = React.useState(false);
   const contentProps = useSpring({
-    
     opacity: showMenu ? 1 : 0,
     marginLeft: showMenu ? 0 : -400,
     transition: 1
@@ -48,7 +43,9 @@ const Header = () => {
         <button onClick={()=>displayMenu(false)}>ZAMKNIJ</button>
       </a.nav>
       )
-      : <button className={style('mobile-show-button')} onClick={()=>displayMenu(true)}>Pokaż menu</button>
+      : <button className={style('mobile-show-button')} onClick={()=>displayMenu(true)}>
+        
+      </button>
     )
 
   //TO DO HAMBURGER
