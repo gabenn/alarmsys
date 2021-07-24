@@ -51,11 +51,13 @@ const Header = () => {
   //TO DO HAMBURGER
   return ( 
     <header className={style()}>
+      <div className={style('content-wrapper')}>
       <div>
         <img src='' alt="ALARMSYS" />
         {/* //https://media.discordapp.net/attachments/855918865435328553/867440586785161236/logo.jpg?width=306&height=122 */}
       </div>
       {navigationMenu}
+      </div>
     </header>
    );
    

@@ -5,12 +5,21 @@ $basic-font-weight: 400;
 $big-font-weight: 600;
 
 .header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  background-color: $basic-bg-color;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  &__content-wrapper{
 
-  padding: 10px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   
+    padding: 10px 50px;
+    margin-bottom: 10px;
+  
+  }
   &__navigation-bar{
     list-style-type: none;
 
