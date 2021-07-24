@@ -1,0 +1,14 @@
+.main{
+  &__image-background{
+
+    background-image: url('https://cdn.discordapp.com/attachments/855918865435328553/868117584745209856/homeSec.jpg');
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    min-width: 1200px;
+    min-height: 900px;
+  }
+}
