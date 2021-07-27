@@ -11,8 +11,6 @@ const style = bemCssModules(HeaderStyles);
 
 const Header = () => {
 
-  //TODO
-  //WYCIĄGNĄĆ NAWIGACJE DO NOWEGO KOMPONENTU (PROBLEM ZE STYLAMI)
   const isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 
   const [showMenu, displayMenu] = React.useState(false);
