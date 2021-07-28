@@ -26,7 +26,7 @@ const Main = () => {
         </section>
         <section className={style('about-box')}>
           <Link to='/offer' className={style('about-link')}>
-            Lorem ipsum dolor sit amet consectetur.
+            Poznaj naszą ofertę
           </Link>
           <div className={style('about-info')}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nesciunt modi optio eligendi nobis, accusantium cum culpa eius. Est, sunt itaque. Quis iusto, architecto culpa perspiciatis obcaecati inventore? Vero similique nemo possimus. Error, et deserunt? Asperiores facere obcaecati distinctio autem dolor tempore quidem illum accusantium, harum dolore. Doloremque, alias praesentium!
@@ -37,7 +37,7 @@ const Main = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo nesciunt modi optio eligendi nobis, accusantium cum culpa eius. Est, sunt itaque. Quis iusto, architecto culpa perspiciatis obcaecati inventore? Vero similique nemo possimus. Error, et deserunt? Asperiores facere obcaecati distinctio autem dolor tempore quidem illum accusantium, harum dolore. Doloremque, alias praesentium!
           </div>
           <Link to='/contact' className={style('about-link')}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Napisz do nas
           </Link>
         </section>
       </section>

@@ -25,4 +25,9 @@ $big-font-weight: 600;
     padding: 30px;
     font-size: 1.5rem;
   }
+  &__error-box{
+    & *{
+      color: red;
+    }
+  }
 }
