@@ -1,4 +1,22 @@
-CAŁY PROJEKT
-STYLE NA MOBILKĘ AKTUALNIE NA FULL HD (1980-1080) I 1280-720 wygląda git
-HEADER
-PRZESUNĄĆ NAWIGACJE DO OSOBNEGO KOMPONENTU
+STYLE
+  ZROBIONE 
+    STRONA GŁÓWNA
+    HEADER  
+    FOOTER
+  DO ZROBIENIA 
+    O FIRMIE
+    OFERTA
+    KONTAKT
+-----------------------------------------------------------------------
+STRONA GŁÓWNA
+
+-----------------------------------------------------------------------
+OFERTA
+
+-----------------------------------------------------------------------
+O FIRMIE
+
+-----------------------------------------------------------------------
+KONTAKT
+
+-----------------------------------------------------------------------

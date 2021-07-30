@@ -12,7 +12,7 @@ $big-font-weight: 600;
 
   background-color: $basic-font-color;
 
-  padding: 20px;
+  padding: 40px 10px;
 
   *{
     color: $basic-bg-color;
@@ -28,10 +28,12 @@ $big-font-weight: 600;
     flex-direction: column;
     justify-content: center;
 
+    border-left:2px solid $basic-bg-color;
+    padding-left: 5px;
+
     &>a:before{
       font-size: 1.2rem;
       content: "\2192\ ";
     }
-
   }
 }

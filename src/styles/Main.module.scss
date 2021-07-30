@@ -4,12 +4,12 @@ $basic-font-color: rgb(245, 222, 179);
 $basic-font-weight: 400;
 $big-font-weight: 600;
 
-.main{
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
-    
-  &__image-background{
+
+  &__image-background {
 
     background-image: url('https://cdn.discordapp.com/attachments/855918865435328553/868117584745209856/homeSec.jpg');
 
@@ -18,23 +18,25 @@ $big-font-weight: 600;
     justify-content: start;
 
     background-repeat: no-repeat;
-    min-width: 1200px;
-    min-height: 900px;
+    background-size: 100% 100%;
+    background-position-x: right;
+    width: 75vw;
+    height: 50vw;
 
-    &>h1{
+    &>h1 {
       font-weight: $big-font-weight;
       color: $basic-bg-color;
       padding: 20px;
-      font-size: 2rem;
+      font-size: 1.9rem;
 
     }
   }
 
-  &__about{
+  &__about {
     display: flex;
     flex-flow: column wrap;
 
-    &-box{
+    &-box {
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -42,29 +44,103 @@ $big-font-weight: 600;
       margin-top: 30px;
       padding: 30px 100px;
       border-top: 30px solid $basic-font-color;
-
     }
-    &-link{
-      border: 10px solid $basic-font-color ;
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      border: 1vw solid $basic-font-color;
       width: 25%;
-      padding: 30px;
+      padding: 5vw;
       font-weight: $big-font-weight;
       font-size: 1.8rem;
       transition: 1s;
-      border-radius: 10px;
+      border-radius: 1vw;
       text-decoration: none;
-      &:hover{
+
+      &:hover {
         color: $basic-bg-color;
         background-color: $basic-font-color;
       }
     }
-    &-info{
-      border-radius: 10px;
-      border: 10px solid $basic-font-color ;
-      width: 65%;
-      padding: 30px;
+
+    &-info {
+      border-radius: 1vw;
+      border: 1vw solid $basic-font-color;
+      width: 60%;
+      padding: 5vw;
       font-size: 1.4rem;
       transition: 1s;
-    } 
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    &__image-background {
+      &>h1 {
+        padding: 10px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &__about {
+      display: flex;
+      flex-flow: column wrap;
+
+      &-link {
+        width: 100%;
+        min-height: 200px;
+        padding: 15px;
+        border-radius: 1vw;
+        text-decoration: none;
+      }
+
+      &-info {
+        border-radius: 1vw;
+        width: 100%;
+        padding: 15px;
+
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .main {
+    &__image-background {
+      &>h1 {
+        padding: 10px;
+        font-size: 1.8rem;
+      }
+    }
+
+    &__about {
+      display: flex;
+      flex-flow: column wrap;
+
+      &-box {
+        display: flex;
+        flex-direction: column;
+        &:nth-child(2){
+          flex-direction: column-reverse;
+        }
+      }
+
+      &-link {
+        width: 100%;
+        padding: 15px;
+      }
+
+      &-info {
+        border-radius: 1vw;
+        width: 100%;
+        padding: 15px;
+      }
+    }
   }
 }
