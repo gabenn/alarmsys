@@ -23,6 +23,7 @@ $big-font-weight: 600;
     width: 75vw;
     height: 50vw;
 
+
     &>h1 {
       font-weight: $big-font-weight;
       color: $basic-bg-color;
@@ -78,7 +79,7 @@ $big-font-weight: 600;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main {
     &__image-background {
       &>h1 {

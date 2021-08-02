@@ -5,10 +5,15 @@ $basic-font-weight: 400;
 $big-font-weight: 600;
 
 .content{
-  margin: 125px 0;
+  margin: 15vw 0;
 
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+}
+@media (min-width: 1200px) {
+  .content{
+    margin: 10vw 0;
+  }
 }
