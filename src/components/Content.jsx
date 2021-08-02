@@ -1,12 +1,12 @@
 import React from 'react';
-import { Redirect, Route, Switch } from 'react-router-dom';
-import About from '../../Content/About';
-import Contact from '../../Content/Contact';
-import Main from '../../Content/Main';
-import Offer from '../../Content/Offer';
+import { Route, Switch } from 'react-router-dom';
+import About from './About';
+import Contact from './Contact';
+import Main from './Main';
+import Offer from './Offer';
 //Styles
 import bemCssModules from 'bem-css-modules';
-import { default as ContentStyles} from '../../styles/Content.module.scss';
+import { default as ContentStyles} from '../styles/Content.module.scss';
 const style = bemCssModules(ContentStyles);
 const Content = () => {
   return ( 

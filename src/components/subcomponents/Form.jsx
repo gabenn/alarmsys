@@ -1,6 +1,6 @@
 //Libraries
 import bemCssModules from 'bem-css-modules';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 //Context
 //Components
 //Styles

@@ -1,13 +1,12 @@
 //Libraries
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useSpring, animated as a } from "react-spring";
 //Context
 //Components
-import Form from '../components/Form/Form';
+import Form from './subcomponents/Form';
 //Styles
 
-const Contact = () => {
+const Contact = () => {  
   return ( 
     <section>
       <Form />

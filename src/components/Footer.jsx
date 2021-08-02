@@ -1,11 +1,11 @@
 //Libraries
 import bemCssModules from 'bem-css-modules';
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 //Context
 //Components
 //Styles
-import { default as FooterStyles} from '../../styles/Footer.module.scss';
+import { default as FooterStyles} from '../styles/Footer.module.scss';
 const style = bemCssModules(FooterStyles);
 
 const Footer = () => {

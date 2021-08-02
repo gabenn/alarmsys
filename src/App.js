@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles/App.module.scss';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Content from './components/Content/Content';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Content from './components/Content';
 
 
 

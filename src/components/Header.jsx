@@ -1,19 +1,19 @@
 //Libraries
 import bemCssModules from 'bem-css-modules';
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSpring, animated as a } from "react-spring";
 //Context
 //Components
 //Styles
-import { default as HeaderStyles} from '../../styles/Header.module.scss';
+import { default as HeaderStyles} from '../styles/Header.module.scss';
 const style = bemCssModules(HeaderStyles);
 
 const Header = () => {
 
   const isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
 
-  const [showMenu, displayMenu] = React.useState(false);
+  const [showMenu, displayMenu] = useState(false);
   const contentProps = useSpring({
     opacity: showMenu ? 1 : 0,
     marginLeft: showMenu ? 0 : -400,
