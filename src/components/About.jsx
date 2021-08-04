@@ -11,7 +11,9 @@ const style = bemCssModules(OfferStyles);
 const About = () => {
 
   return (
+    <>
     <AboutHeader />
+    </>
    );
 }
  

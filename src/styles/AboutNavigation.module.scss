@@ -1,0 +1,38 @@
+$basic-font-family: 'Barlow Semi Condensed', sans-serif;
+$basic-bg-color: rgb(17, 16, 16);
+$basic-font-color: rgb(245, 222, 179);
+$basic-font-weight: 400;
+$big-font-weight: 600;
+
+.about-navigation{
+  border-top:2px solid $basic-font-color;
+
+  padding:15px 10px;
+  margin:15px 0;
+
+  text-align: left;
+  &>button{
+    font-size: 1.5rem;
+
+    border: 4px solid $basic-font-color;
+    border-radius: 30px;
+
+    margin: 0 2px;
+    padding: 0 5px;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: $basic-bg-color;
+
+    color: $basic-font-color;
+    // &>.active{
+    //   background-color: white;
+    // }
+    &:hover{
+      background-color: white;
+      color: black;
+      font-weight: $big-font-weight;
+    }
+  }
+}
