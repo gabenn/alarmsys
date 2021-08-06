@@ -1,33 +1,58 @@
-$basic-font-family: 'Barlow Semi Condensed', sans-serif;
+$basic-font-family: 'Barlow Semi Condensed',
+sans-serif;
 $basic-bg-color: rgb(17, 16, 16);
 $basic-font-color: rgb(245, 222, 179);
 $basic-font-weight: 400;
 $big-font-weight: 600;
 
-.form{
-
+.form {
   display: flex;
   flex-direction: column;
 
-  &>h1{
-    font-size: 3.5rem;
+  &>h1 {
+    font-size: 2rem;
   }
-  &>textarea{
+
+  &>textarea {
     resize: none;
   }
 
-  &__input{
+  &__input {
     margin: 10px 0;
     background-color: $basic-bg-color;
-    border: 1px solid $basic-font-color ;
+    border: 1px solid $basic-font-color;
     color: $basic-font-color;
     border-radius: 10px;
-    padding: 30px;
-    font-size: 1.5rem;
+    padding: 20px;
   }
-  &__error-box{
-    & *{
+
+  &__error-box {
+    & * {
       color: red;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .form {
+    &>h1 {
+      font-size: 2.75rem;
+    }
+
+    &__input {
+      margin: 10px 0;
+      background-color: $basic-bg-color;
+      border: 1px solid $basic-font-color;
+      color: $basic-font-color;
+      border-radius: 10px;
+      padding: 30px;
+      font-size: 1.5rem;
+    }
+
+    &__error-box {
+      & * {
+        color: red;
+      }
     }
   }
 }
