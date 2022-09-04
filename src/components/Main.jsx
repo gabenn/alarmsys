@@ -17,7 +17,7 @@ const Main = () => {
       <section className={style('about')}>
         <section className={style('about-box')}>
           <div className={style('about-info')}>
-          Firma ALARMSYS jest na rynku polskim firmą posiadającą dużą wiedzę i doświadczenie w zakresie oceny zagrożeń, projektowania i wykonywania wszelkiego rodzaju instalacji służących ochronie obiektów, przebywających w nich ludzi i zgromadzonego mienia. 
+          Tempor aute nisi ullamco adipisicing ea ipsum incididunt aliquip deserunt culpa cupidatat consectetur mollit. Occaecat ad esse ullamco ut tempor duis. Tempor elit consequat ut officia ut laborum commodo excepteur nostrud est enim deserunt.
           </div>
           <Link to='/about' className={style('about-link')}>
             Dowiedz się więcej

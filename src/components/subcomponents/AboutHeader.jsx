@@ -11,25 +11,26 @@ const style = bemCssModules(AboutHeaderStyles);
 
 const articlesData = [
 {
+  
   id:1,
   title: 'Title 1',
-  text1: 'Firma ALARMSYS jest na rynku polskim firmą posiadającą dużą wiedzę i doświadczenie w zakresie oceny zagrożeń, projektowania i wykonywania wszelkiego rodzaju instalacji służących ochronie obiektów, przebywających w nich ludzi i zgromadzonego mienia. W ciągu 4 lat działalności firma uczestniczyła w wykonawstwie systemów ochrony o różnym stopniu skomplikowania od najmniejszych systemów dla mieszkań, biur ...  po systemy ochrony placówek banków, jednostek wojskowych, kancelarii tajnych i innych.',
-  text2: '2 Dzięki minimalizacji kosztów własnych firma oferuje wysoką konkurencyjność w stosunku do innych firm branży "Systemów ochrony osób i mienia".',
-  text3: '3 Prowadzone przez firmę doradztwo i usługi konsultacyjne pozwalają na dobór optymalnego do rodzaju zagrożonego obiektu systemu zabezpieczeń ( wg. klasyfikacji TECHOM ) oraz  konfiguracje urządzeń odpowiadających możliwościom finansowym inwestora przy jednoczesnym zapewnieniu jego niezawodności i wysokiej jakości.',
+  text1: '1 Amet id proident in dolor esse ipsum laboris quis sit anim. Ad cillum culpa irure aute adipisicing fugiat enim ipsum non exercitation. Do consequat pariatur voluptate sit esse incididunt labore minim amet anim. Nulla nulla veniam do sit proident velit dolor est magna exercitation sit occaecat tempor aute. Ex cupidatat ea deserunt tempor exercitation sint et in magna do magna laboris.',
+  text2: '2 Nostrud do laborum amet est dolor id tempor ullamco ea veniam nulla.',
+  text3: '3 Eu Lorem magna aliquip reprehenderit officia laboris dolore sit consequat. Cupidatat pariatur occaecat exercitation ullamco occaecat minim nostrud cupidatat irure nulla exercitation ut est eiusmod. Laborum Lorem qui ipsum mollit.Commodo eiusmod sunt nostrud elit cupidatat est aliquip et sint dolor magna ipsum.',
 },
 {
   id:2,
   title: 'Title 2',
   text1: '1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti, eius sequi ab asperiores sapiente aliquid est tempora assumenda labore expedita similique quisquam. Nam, fuga.',
-  text2: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti, eius sequi ab asperiores sapiente aliquid est tempora assumenda labore expedita similique quisquam. Nam, fuga.',
-  text3: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti, eius sequi ab asperiores sapiente aliquid est tempora assumenda labore expedita similique quisquam. Nam, fuga.',
+  text2: '2 Ea sunt eu officia ipsum anim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti, eius sequi ab asperiores sapiente aliquid est tempora assumenda labore expedita similique quisquam. Nam, fuga.',
+  text3: '3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti, eius sequi ab asperiores sapiente aliquid est tempora assumenda labore expedita similique quisquam. Nam, fuga. Ullamco nostrud quis magna quis in sit sit ipsum eu irure excepteur.',
 },
 {  
   id:3,
   title: 'Title 3',
-  text1: '1 ALARMSYS współpracuje z instalatorami oraz innymi firmami w branży pragnąc przygotować się do wykonawstwa wszelkiego rodzaju systemów zabezpieczeń . Systemy zabezpieczeń projektowane są tak aby stwarzały możliwość rozbudowy lub modyfikacji bez ponoszenia większych kosztów..',
+  text1: '1 Officia Lorem deserunt labore veniam ullamco sint in. Pariatur tempor tempor tempor adipisicing anim. Duis in nostrud do pariatur ad. Mollit labore ullamco reprehenderit labore sit Lorem eu pariatur consequat ad quis occaecat ut. Pariatur reprehenderit consectetur nisi eu occaecat dolore cillum cillum.',
   text2: '2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione deleniti, eius sequi ab asperiores sapiente aliquid est tempora assumenda labore expedita similique quisquam. Nam, fuga.',
-  text3: '3 Gwarantujemy profesjonalne usługi w zakresie projektowania zabezpieczeń, instalacji, konserwacji montowanych systemów wraz z podłączeniem do stacji monitorowania alarmów prowadzonych przez współpracujące z nami agencje ochrony.',
+  text3: '3 Esse exercitation ipsum esse ad ad consectetur dolore. Nisi quis occaecat magna id tempor est Lorem aliqua consectetur. Ex labore incididunt exercitation aute ut nisi deserunt excepteur. Eiusmod consequat deserunt aliqua veniam cupidatat labore tempor proident mollit.',
 },
 ]
 
