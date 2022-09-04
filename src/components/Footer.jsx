@@ -12,11 +12,11 @@ const Footer = () => {
   return ( 
     <footer className={style()}>
       <address className={style('address')}>
-        <h3>Alarmsys Sławomir Cysewski</h3>
-        <span>ul. Morska 99/17</span>
-        <span>81-225 Gdynia</span>
-        <span>Telefon: +48 501-386-935</span>
-        <span><a href="mailto:alarmsys@alarmsys.pl">alarmsys@alarmsys.pl</a> </span>
+        <h3>Lorem ADAM ADAM</h3>
+        <span>ul. Warszawska 12</span>
+        <span>23-213 Polska</span>
+        <span>Telefon: +48 123-123-123</span>
+        <span><a href="mailto:">lorem@lorem.com</a> </span>
       </address>
       <nav className={style('navigation-bar')}>
         <Link to='/'>STRONA GŁÓWNA</Link>
