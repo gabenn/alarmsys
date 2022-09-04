@@ -1,16 +1,26 @@
 //Libraries
 import React, { useContext, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 //Context
 //Components
 import Form from './subcomponents/Form';
+import GoogleMapComp from './subcomponents/GoogleMapComp';
 //Styles
 
 const Contact = () => {  
   return ( 
-    <section>
+    <>
       <Form />
-    </section>
+      <GoogleMapComp 
+        onLoad={map => {
+          const bounds = new window.google.maps.LatLngBounds();
+          map.fitBounds(bounds);
+        }}
+        onUnmount={map => {
+          // do your stuff before map is unmounted
+        }}
+      />
+    </>
    );
 }
  

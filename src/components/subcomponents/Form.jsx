@@ -58,19 +58,26 @@ const Form = () => {
     setErrors(validation)
 
     if(validation.correct){
-      Email.send({
-        SecureToken: 'c3a1bde9-8fc6-4376-adb6-435ef3c4c948',
-        To : 'alarmsys@alarmsys.pl',
-        From : mailValue,
-        Subject : subjectValue,
-        Body : `
-        <html>
-          <h1>${subjectValue}</h1>
-          <h2>Wiadomość od: ${nameValue} mail: ${mailValue}</h2>
-          <p>${mailTextValue}</p>
-        </html>`
-      })
-      .then(message => null)
+      // Email.send({
+      //   SecureToken: 'c3a1bde9-8fc6-4376-adb6-435ef3c4c948',
+      //   To : 'alarmsys@alarmsys.pl',
+      //   From : mailValue,
+      //   Subject : subjectValue,
+      //   Body : `
+      //   <html>
+      //     <h1>${subjectValue}</h1>
+      //     <h2>Wiadomość od: ${nameValue} mail: ${mailValue}</h2>
+      //     <p>${mailTextValue}</p>
+      //   </html>`
+      // })
+      // .then(message => {
+        
+      // })
+      alert(`Mail został wysłany`);
+      setNameValue('');
+      setSubjectValue('');
+      setMailValue('');
+      setMailTextValue('');
     }
   }
 

@@ -12,7 +12,7 @@ const Main = () => {
   return ( 
     <section className={style()}>
       <section className={style('image-background')}>
-        <h1>Lorem, ipsum dolor.</h1>
+        {/* <h1>Lorem, ipsum dolor.</h1> */}
       </section>
       <section className={style('about')}>
         <section className={style('about-box')}>
